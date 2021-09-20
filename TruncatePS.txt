@@ -1,0 +1,9 @@
+// three dirs
+function prompt
+{
+   $promptString =   "PS>..\" + (Get-Item -Path "..\..\").Name + "\" +(Get-Item -Path "..\").Name + "\"+  (Get-Item -Path ".\").Name ;
+    Write-Host $promptString -NoNewline -ForegroundColor Green
+	Write-Host  ": " -ForegroundColor White -NoNewline; 
+    return " "
+   
+}
